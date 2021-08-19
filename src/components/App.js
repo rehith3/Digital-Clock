@@ -9,7 +9,7 @@ function gen(){
     const sec=cd.getSeconds();
     cd.setHours(9)
      
-    return cd.toLocaleTimeString()+" "+(hr>=12?'PM':'AM');
+    return hr+":"+min+":"+sec+" "+(hr>=12?'PM':'AM');
 }
 
 class App extends Component {
