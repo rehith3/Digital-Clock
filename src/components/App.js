@@ -7,9 +7,9 @@ function gen(){
     const hr=cd.getHours();
     const min=cd.getMinutes();
     const sec=cd.getSeconds();
-    cd.setHours(9)
      
-    return hr+":"+min+":"+sec+" "+(hr>=12?'PM':'AM');
+    // return hr+":"+min+":"+sec+" "+(hr>=12?'PM':'AM');
+    return cd.toLocaleTimeString().toUpperCase();
 }
 
 class App extends Component {
